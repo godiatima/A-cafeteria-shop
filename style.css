@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+img {
+  width:1000px;
+  height:800px;
+}
+
+
+.navs {
+  display: flex;
+  margin-left:260px;
+  list-style: none;
+  
+}
+
+.navs a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  margin: 30px;
+}
+
+a:visited {
+  color: #b19cd9;
+}
+
+a:focus, 
+a:active {
+  color: #416931;
+}
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+}
+
+
+.contact {
+  margin: 40px;
+  width: 200px;
+  
+}
+form {
+  display: inline-block;
+  
+}
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  text-transform: uppercase;
+}
+
+.about p {
+  text-align: justify;
+  line-height: 1.5;
+  }
+
+input {
+  margin-top: 10px;
+  width: 200px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 200px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+.reach {
+  margin: auto;
+}
+
+
+.menu ul {
+  margin-left: 10px;
+  padding:2px;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  margin-top: 10px;
+  background: green;
+  color: white;
+  width: 200px;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  color: greenyellow;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
