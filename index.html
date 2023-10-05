@@ -5,63 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moringa Cafeteria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <!-- Header section with navigation bar -->
-    <header>
-        <nav>
-            <ul class="navs">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
     
-    <!-- Main section with hero, about, menu, and contact sections -->]
+    <!-- Main section with hero, about, menu, and contact sections -->
     <main>
-
          <!-- Hero section with welcome message, description, and button -->
-        <section>
-            <h1>Welcome to Moringa Cafetiria</h1>
-            <button>View Menu</button>
+        <section class="hero">
+            <header>
+                <div class="logo">Cafeteria Shop</div>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="hero-text">
+                <h1>Welcome to Moringa Cafeteria</h1>
+                <a href="#menu" class="btn btn--big">View Menu</a>
+            </div>
         </section>
 
 <!-- About section with information about the restaurant -->
-        <section>
-         <h1>About</h1>
-         <p> We are a Moringa owned Cafeteria that serves delicious meals to students</p>
-         <button>View Menu</button>
+        <section class="about" id="about">
+            <h1 class="heading">About</h1>
+            <div class="about-container">
+                <div class="about-brief-image">
+                    <img src="img/about.jpg" alt="About image">
+                </div>
+                <div class="about-brief">
+                    <p> We are a Moringa owned Cafeteria that serves delicious meals to students</p>
+                    <p>Lorem ipsum, doloro at, dolore incidunt, aperiam accusantium expedita, temporibus animi numquam. Rerum, optio?</p>
+                    <a href="about.html" class="btn btn--small">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
         </section>
 
         <!-- Menu section with a list of menu items -->
-        <section>
-            <h1>Menu</h1>
-           <ul>
-            <li>Appetizers</li>
-            <li>Desserts</li>
-            <li>Breakfast</li>
-            <li>Lunch</li>
-           </ul>
+        <section class="menu" id="menu">
+            <h1 class="heading">Menu</h1>
+
+            <div class="menu-btn">
+                <a href="gallery.html" class="btn btn--small">View gallery <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-box row">
+                    <div class="menu-box-info column">
+                        <div class="box-number">01</div>
+                        <div class="box-title">Appetizers</div>
+                        <div class="box-description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores cumque repudiandae explicabo nobis doloribus. Veritatis nemo 
+                                ipsa cumque odit natus eligendi blanditiis eum vitae tempore!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menu-box-image column">
+                        <img src="img/appetizer.jpg" alt="Appetizers">
+                    </div>
+                </div>
+                <div class="menu-box row">
+                    <div class="menu-box-image column">
+                        <img src="img/dessert.jpg" alt="dessert">
+                    </div>
+                    <div class="menu-box-info column">
+                        <div class="box-number">02</div>
+                        <div class="box-title">Desserts</div>
+                        <div class="box-description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores cumque repudiandae explicabo nobis doloribus. Veritatis nemo 
+                                ipsa cumque odit natus eligendi blanditiis eum vitae tempore!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-box row">
+                    <div class="menu-box-info column">
+                        <div class="box-number">03</div>
+                        <div class="box-title">Breakfast</div>
+                        <div class="box-description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores cumque repudiandae explicabo nobis doloribus. Veritatis nemo 
+                                ipsa cumque odit natus eligendi blanditiis eum vitae tempore!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="menu-box-image column">
+                        <img src="img/breakfast.jpg" alt="Breakfast">
+                    </div>
+                </div>
+                <div class="menu-box row">
+                    <div class="menu-box-image column">
+                        <img src="img/lunch.jpg" alt="Lunch">
+                    </div>
+                    <div class="menu-box-info column">
+                        <div class="box-number">04</div>
+                        <div class="box-title">Lunch</div>
+                        <div class="box-description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores cumque repudiandae explicabo nobis doloribus. Veritatis nemo 
+                                ipsa cumque odit natus eligendi blanditiis eum vitae tempore!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
            </section>
 
            <!-- Contact section with a form for customers to contact the restaurant -->
-           <section>
-            <h1>Contact</h1>
-            <form action="#">
-                <label for="email"> Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter email">
-                <label for ="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter name">
-                <label for ="phone">Phone Number</label>
-                <input type="text" name="phone" id="phone" placeholder="Enter phone">
-                <label for="Message" id="message" placeholder></label>
-                <textarea name="message" id="message" placeholder="Enter message"></textarea>
-                <button type="submit">Submit</button>
-            </form>
+           <section class="contact"id="contact">
+            <h1 class="heading">Contact</h1>
+            <div class="contact-form">
+                <form action="action.php" method="post">
+                    <div class="form-input">
+                        <div class="form-item">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" name="name" id="name" placeholder="Enter name">
+                        </div>
+                        <div class="form-item">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="email" name="email" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-item">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <input type="text" name="phone" id="phone" placeholder="Enter phone number">
+                        </div>
+                        <div class="form-item">
+                            <i class="fa fa-comment" aria-hidden="true"></i>
+                            <textarea name="message" id="message" placeholder="Enter message"></textarea>
+                        </div>
+                    </div>
+        
+                    <button class="btn" type="submit">Submit</button>
+                </form>
            </section>
     </main>
 
